@@ -1,0 +1,50 @@
+---
+dependency:
+  name: galaxy
+  name: shell
+  command: ansible-playbook -i localhost ${MOLECULE_VERBOSITY} ../molecule_shared/dependency.yml
+driver:
+  name: docker
+lint: |
+  set -e
+  yamllint .
+  ansible-lint -c ../molecule_shared/.ansible-lint .
+platforms:
+  - name: fo.testlab.invalid
+    image: geerlingguy/docker-${MOLECULE_DISTRO:-centos7}-ansible:latest
+    command: ""
+    privileged: true
+    pre_build_image: true
+    tmpfs:
+      - /run
+      - /tmp
+    groups:
+      - docker_hosts
+      - fakeOrigin
+    capabilities:
+      - SYS_ADMIN
+    volumes:
+      - ${MOLECULE_EPHEMERAL_DIRECTORY}:/molecule
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+
+provisioner:
+  name: ansible
+  playbooks:
+    prepare: "../../../molecule_shared/prepare.yml"
+  log: True
+  options:
+    vvv: True
+  inventory:
+    group_vars:
+      docker_hosts:
+        docker_storage_driver: vfs
+    host_vars:
+      fo.testlab.invalid:
+        cdn: ALL
+        component: fakeOrigin
+        ansible_host: fo.testlab.invalid
+
+verifier:
+  name: testinfra
+  lint:
+    name: flake8

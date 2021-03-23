@@ -1,0 +1,16 @@
+---
+- name: Converge
+  hosts: all
+
+  tasks:
+    - name: Deploy fakeOrigin
+      import_role:
+        name: fakeOrigin
+      vars:
+        install_fakeOrigin: true
+        fo_http_port: 80
+        fo_https_port: 443
+        fakeOrigin_version: 1.0.0_dev_11266-1
+        fo_base_dir: /opt/fakeOrigin
+        fo_conf_dir: /etc/fakeOrigin
+

@@ -1,0 +1,3225 @@
+[2;37mDEBUG   [0m Validating schema [35m/Users/apaudy028/public-github/ash-trafficcontrol-copy/infrastructure/ansible/roles/fakeOrigin/molecule/default/[0m[95mmolecule.yml.[0m
+[34mINFO    [0m default scenario test matrix: dependency, create, prepare, converge
+[34mINFO    [0m [2;36mRunning [0m[2;32mdefault[0m[2;36m > [0m[2;32mdependency[0m
+[31mWARNING [0m Skipping, missing the requirements file.
+[31mWARNING [0m Skipping, missing the requirements file.
+[34mINFO    [0m [2;36mRunning [0m[2;32mdefault[0m[2;36m > [0m[2;32mcreate[0m
+[31mWARNING [0m Skipping, instances already created.
+[34mINFO    [0m [2;36mRunning [0m[2;32mdefault[0m[2;36m > [0m[2;32mprepare[0m
+[34mINFO    [0m Sanity checks: [32m'docker'[0m
+DEBUG: ANSIBLE ENVIRONMENT:
+ANSIBLE_COLLECTIONS_PATH: [35m/Users/apaudy028/.cache/molecule/fakeOrigin/default/[0m[95mcollections[0m:[35m/Users/apaudy028/.ansible/[0m[95mcollections[0m:[35m/usr/share/ansible/[0m[95mcollections[0m:[35m/etc/ansible/[0m[95mcollections[0m
+ANSIBLE_CONFIG: [35m/Users/apaudy028/.cache/molecule/fakeOrigin/default/[0m[95mansible.cfg[0m
+ANSIBLE_FILTER_PLUGINS: [35m/usr/local/lib/python3.8/site-packages/molecule/provisioner/ansible/plugins/[0m[95mfilter[0m:[35m/Users/apaudy028/.cache/molecule/fakeOrigin/default/plugins/[0m[95mfilter[0m:[35m/Users/apaudy028/public-github/ash-trafficcontrol-copy/infrastructure/ansible/roles/fakeOrigin/plugins/[0m[95mfilter[0m:[35m/Users/apaudy028/.ansible/plugins/[0m[95mfilter[0m:[35m/usr/share/ansible/plugins/[0m[95mfilter[0m
+ANSIBLE_FORCE_COLOR: [32m'1'[0m
+ANSIBLE_LIBRARY: [35m/usr/local/lib/python3.8/site-packages/molecule/provisioner/ansible/plugins/[0m[95mmodules[0m:[35m/Users/apaudy028/.cache/molecule/fakeOrigin/default/[0m[95mlibrary[0m:[35m/Users/apaudy028/public-github/ash-trafficcontrol-copy/infrastructure/ansible/roles/fakeOrigin/[0m[95mlibrary[0m:[35m/Users/apaudy028/.ansible/plugins/[0m[95mmodules[0m:[35m/usr/share/ansible/plugins/[0m[95mmodules[0m
+ANSIBLE_ROLES_PATH: [35m/Users/apaudy028/.cache/molecule/fakeOrigin/default/[0m[95mroles[0m:[35m/Users/apaudy028/public-github/ash-trafficcontrol-copy/infrastructure/ansible/[0m[95mroles[0m:[35m/Users/apaudy028/.ansible/[0m[95mroles[0m:[35m/usr/share/ansible/[0m[95mroles[0m:[35m/etc/ansible/[0m[95mroles[0m
+ANSIBLE_VERBOSITY: [32m'3'[0m
+
+DEBUG: MOLECULE ENVIRONMENT:
+MOLECULE_DEBUG: [32m'True'[0m
+MOLECULE_DEPENDENCY_NAME: galaxy
+MOLECULE_DRIVER_NAME: docker
+MOLECULE_ENV_FILE: [35m/Users/apaudy028/public-github/ash-trafficcontrol-copy/infrastructure/ansible/roles/fakeOrigin/[0m[95m.env.yml[0m
+MOLECULE_EPHEMERAL_DIRECTORY: [35m/Users/apaudy028/.cache/molecule/fakeOrigin/[0m[95mdefault[0m
+MOLECULE_FILE: [35m/Users/apaudy028/.cache/molecule/fakeOrigin/default/[0m[95mmolecule.yml[0m
+MOLECULE_INSTANCE_CONFIG: [35m/Users/apaudy028/.cache/molecule/fakeOrigin/default/[0m[95minstance_config.yml[0m
+MOLECULE_INVENTORY_FILE: [35m/Users/apaudy028/.cache/molecule/fakeOrigin/default/inventory/[0m[95mansible_inventory.yml[0m
+MOLECULE_PROJECT_DIRECTORY: [35m/Users/apaudy028/public-github/ash-trafficcontrol-copy/infrastructure/ansible/roles/[0m[95mfakeOrigin[0m
+MOLECULE_PROVISIONER_NAME: ansible
+MOLECULE_SCENARIO_DIRECTORY: [35m/Users/apaudy028/public-github/ash-trafficcontrol-copy/infrastructure/ansible/roles/fakeOrigin/molecule/[0m[95mdefault[0m
+MOLECULE_SCENARIO_NAME: default
+MOLECULE_STATE_FILE: [35m/Users/apaudy028/.cache/molecule/fakeOrigin/default/[0m[95mstate.yml[0m
+MOLECULE_VERIFIER_NAME: testinfra
+MOLECULE_VERIFIER_TEST_DIRECTORY: [35m/Users/apaudy028/public-github/ash-trafficcontrol-copy/infrastructure/ansible/roles/fakeOrigin/molecule/default/[0m[95mtests[0m
+
+DEBUG: SHELL REPLAY:
+[33mANSIBLE_COLLECTIONS_PATH[0m=[35m/Users/apaudy028/.cache/molecule/fakeOrigin/default/[0m[95mcollections[0m:[35m/Users/apaudy028/.ansible/[0m[95mcollections[0m:[35m/usr/share/ansible/[0m[95mcollections[0m:[35m/etc/ansible/[0m[95mcollections[0m [33mANSIBLE_CONFIG[0m=[35m/Users/apaudy028/.cache/molecule/fakeOrigin/default/[0m[95mansible.cfg[0m [33mANSIBLE_FILTER_PLUGINS[0m=[35m/usr/local/lib/python3.8/site-packages/molecule/provisioner/ansible/plugins/[0m[95mfilter[0m:[35m/Users/apaudy028/.cache/molecule/fakeOrigin/default/plugins/[0m[95mfilter[0m:[35m/Users/apaudy028/public-github/ash-trafficcontrol-copy/infrastructure/ansible/roles/fakeOrigin/plugins/[0m[95mfilter[0m:[35m/Users/apaudy028/.ansible/plugins/[0m[95mfilter[0m:[35m/usr/share/ansible/plugins/[0m[95mfilter[0m [33mANSIBLE_FORCE_COLOR[0m=[1;34m1[0m [33mANSIBLE_LIBRARY[0m=[35m/usr/local/lib/python3.8/site-packages/molecule/provisioner/ansible/plugins/[0m[95mmodules[0m:[35m/Users/apaudy028/.cache/molecule/fakeOrigin/default/[0m[95mlibrary[0m:[35m/Users/apaudy028/public-github/ash-trafficcontrol-copy/infrastructure/ansible/roles/fakeOrigin/[0m[95mlibrary[0m:[35m/Users/apaudy028/.ansible/plugins/[0m[95mmodules[0m:[35m/usr/share/ansible/plugins/[0m[95mmodules[0m [33mANSIBLE_ROLES_PATH[0m=[35m/Users/apaudy028/.cache/molecule/fakeOrigin/default/[0m[95mroles[0m:[35m/Users/apaudy028/public-github/ash-trafficcontrol-copy/infrastructure/ansible/[0m[95mroles[0m:[35m/Users/apaudy028/.ansible/[0m[95mroles[0m:[35m/usr/share/ansible/[0m[95mroles[0m:[35m/etc/ansible/[0m[95mroles[0m [33mANSIBLE_VERBOSITY[0m=[1;34m3[0m [33mMOLECULE_DEBUG[0m=[3;92mTrue[0m [33mMOLECULE_DEPENDENCY_NAME[0m=[35mgalaxy[0m [33mMOLECULE_DRIVER_NAME[0m=[35mdocker[0m [33mMOLECULE_ENV_FILE[0m=[35m/Users/apaudy028/public-github/ash-trafficcontrol-copy/infrastructure/ansible/roles/fakeOrigin/[0m[95m.env.yml[0m [33mMOLECULE_EPHEMERAL_DIRECTORY[0m=[35m/Users/apaudy028/.cache/molecule/fakeOrigin/[0m[95mdefault[0m [33mMOLECULE_FILE[0m=[35m/Users/apaudy028/.cache/molecule/fakeOrigin/default/[0m[95mmolecule.yml[0m [33mMOLECULE_INSTANCE_CONFIG[0m=[35m/Users/apaudy028/.cache/molecule/fakeOrigin/default/[0m[95minstance_config.yml[0m [33mMOLECULE_INVENTORY_FILE[0m=[35m/Users/apaudy028/.cache/molecule/fakeOrigin/default/inventory/[0m[95mansible_inventory.yml[0m [33mMOLECULE_PROJECT_DIRECTORY[0m=[35m/Users/apaudy028/public-github/ash-trafficcontrol-copy/infrastructure/ansible/roles/[0m[95mfakeOrigin[0m [33mMOLECULE_PROVISIONER_NAME[0m=[35mansible[0m [33mMOLECULE_SCENARIO_DIRECTORY[0m=[35m/Users/apaudy028/public-github/ash-trafficcontrol-copy/infrastructure/ansible/roles/fakeOrigin/molecule/[0m[95mdefault[0m [33mMOLECULE_SCENARIO_NAME[0m=[35mdefault[0m [33mMOLECULE_STATE_FILE[0m=[35m/Users/apaudy028/.cache/molecule/fakeOrigin/default/[0m[95mstate.yml[0m [33mMOLECULE_VERIFIER_NAME[0m=[35mtestinfra[0m [33mMOLECULE_VERIFIER_TEST_DIRECTORY[0m=[35m/Users/apaudy028/public-github/ash-trafficcontrol-copy/infrastructure/ansible/roles/fakeOrigin/molecule/default/[0m[95mtests[0m
+
+COMMAND: ansible-playbook --diff --inventory /Users/apaudy028/.cache/molecule/fakeOrigin/default/inventory --skip-tags molecule-notest,notest /Users/apaudy028/public-github/ash-trafficcontrol-copy/infrastructure/ansible/roles/molecule_shared/prepare.yml
+[34mansible-playbook 2.10.6[0m
+[34m  config file = /Users/apaudy028/.cache/molecule/fakeOrigin/default/ansible.cfg[0m
+[34m  configured module search path = ['/usr/local/lib/python3.8/site-packages/molecule/provisioner/ansible/plugins/modules', '/Users/apaudy028/.cache/molecule/fakeOrigin/default/library', '/Users/apaudy028/public-github/ash-trafficcontrol-copy/infrastructure/ansible/roles/fakeOrigin/library', '/Users/apaudy028/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules'][0m
+[34m  ansible python module location = /usr/local/lib/python3.8/site-packages/ansible[0m
+[34m  executable location = /usr/local/bin/ansible-playbook[0m
+[34m  python version = 3.8.3 (default, May 27 2020, 20:53:40) [Clang 11.0.0 (clang-1100.0.33.17)][0m
+[34mUsing /Users/apaudy028/.cache/molecule/fakeOrigin/default/ansible.cfg as config file[0m
+[34mhost_list declined parsing /Users/apaudy028/.cache/molecule/fakeOrigin/default/inventory/ansible_inventory.yml as it did not pass its verify_file() method[0m
+[34mscript declined parsing /Users/apaudy028/.cache/molecule/fakeOrigin/default/inventory/ansible_inventory.yml as it did not pass its verify_file() method[0m
+[34mParsed /Users/apaudy028/.cache/molecule/fakeOrigin/default/inventory/ansible_inventory.yml inventory source with yaml plugin[0m
+[34mredirecting (type: modules) ansible.builtin.openssl_privatekey to community.crypto.openssl_privatekey[0m
+[34mredirecting (type: modules) ansible.builtin.openssl_csr to community.crypto.openssl_csr[0m
+[34mredirecting (type: modules) ansible.builtin.openssl_certificate to community.crypto.x509_certificate[0m
+[34mSkipping callback 'default', as we already have a stdout callback.[0m
+[34mSkipping callback 'minimal', as we already have a stdout callback.[0m
+[34mSkipping callback 'oneline', as we already have a stdout callback.[0m
+
+PLAYBOOK: prepare.yml **********************************************************
+[34m1 plays in /Users/apaudy028/public-github/ash-trafficcontrol-copy/infrastructure/ansible/roles/molecule_shared/prepare.yml[0m
+
+PLAY [all] *********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+[1;30mtask path: /Users/apaudy028/public-github/ash-trafficcontrol-copy/infrastructure/ansible/roles/molecule_shared/prepare.yml:2[0m
+[34mredirecting (type: connection) ansible.builtin.docker to community.general.docker[0m
+[34m<fo.testlab.invalid> ESTABLISH DOCKER CONNECTION FOR USER: root[0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', "/bin/sh -c 'echo ~ && sleep 0'"][0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', '/bin/sh -c \'( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1615591376.71864-73465-193692243986465 `" && echo ansible-tmp-1615591376.71864-73465-193692243986465="` echo /root/.ansible/tmp/ansible-tmp-1615591376.71864-73465-193692243986465 `" ) && sleep 0\''][0m
+[34m<fo.testlab.invalid> Attempting python interpreter discovery[0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', '/bin/sh -c \'echo PLATFORM; uname; echo FOUND; command -v \'"\'"\'/usr/bin/python\'"\'"\'; command -v \'"\'"\'python3.7\'"\'"\'; command -v \'"\'"\'python3.6\'"\'"\'; command -v \'"\'"\'python3.5\'"\'"\'; command -v \'"\'"\'python2.7\'"\'"\'; command -v \'"\'"\'python2.6\'"\'"\'; command -v \'"\'"\'/usr/libexec/platform-python\'"\'"\'; command -v \'"\'"\'/usr/bin/python3\'"\'"\'; command -v \'"\'"\'python\'"\'"\'; echo ENDFOUND && sleep 0\''][0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', "/bin/sh -c '/usr/bin/python && sleep 0'"][0m
+[34mUsing module file /usr/local/lib/python3.8/site-packages/ansible/modules/setup.py[0m
+[34m<fo.testlab.invalid> PUT /Users/apaudy028/.ansible/tmp/ansible-local-73461biyhlsab/tmpuk1s_tgq TO /root/.ansible/tmp/ansible-tmp-1615591376.71864-73465-193692243986465/AnsiballZ_setup.py[0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', "/bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1615591376.71864-73465-193692243986465/ /root/.ansible/tmp/ansible-tmp-1615591376.71864-73465-193692243986465/AnsiballZ_setup.py && sleep 0'"][0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', "/bin/sh -c '/usr/bin/python /root/.ansible/tmp/ansible-tmp-1615591376.71864-73465-193692243986465/AnsiballZ_setup.py && sleep 0'"][0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', "/bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1615591376.71864-73465-193692243986465/ > /dev/null 2>&1 && sleep 0'"][0m
+[32mok: [fo.testlab.invalid][0m
+[34mMETA: ran handlers[0m
+
+TASK [Dump all the hostvars to inspect later] **********************************
+[1;30mtask path: /Users/apaudy028/public-github/ash-trafficcontrol-copy/infrastructure/ansible/roles/molecule_shared/prepare.yml:18[0m
+[34mredirecting (type: connection) ansible.builtin.docker to community.general.docker[0m
+[32mok: [fo.testlab.invalid] => {[0m
+[32m    "hostvars": {[0m
+[32m        "fo.testlab.invalid": {[0m
+[32m            "ansible_all_ipv4_addresses": [[0m
+[32m                "172.17.0.2"[0m
+[32m            ],[0m
+[32m            "ansible_all_ipv6_addresses": [],[0m
+[32m            "ansible_apparmor": {[0m
+[32m                "status": "disabled"[0m
+[32m            },[0m
+[32m            "ansible_architecture": "x86_64",[0m
+[32m            "ansible_bios_date": "03/14/2014",[0m
+[32m            "ansible_bios_vendor": "BHYVE",[0m
+[32m            "ansible_bios_version": "1.00",[0m
+[32m            "ansible_board_asset_tag": "NA",[0m
+[32m            "ansible_board_name": "NA",[0m
+[32m            "ansible_board_serial": "NA",[0m
+[32m            "ansible_board_vendor": "NA",[0m
+[32m            "ansible_board_version": "NA",[0m
+[32m            "ansible_chassis_asset_tag": "None",[0m
+[32m            "ansible_chassis_serial": "None",[0m
+[32m            "ansible_chassis_vendor": "NA",[0m
+[32m            "ansible_chassis_version": "1.0",[0m
+[32m            "ansible_check_mode": false,[0m
+[32m            "ansible_cmdline": {[0m
+[32m                "console": "ttyS1",[0m
+[32m                "earlyprintk": "serial",[0m
+[32m                "mitigations": "off",[0m
+[32m                "no_stf_barrier": true,[0m
+[32m                "noibpb": true,[0m
+[32m                "noibrs": true,[0m
+[32m                "nospec_store_bypass_disable": true,[0m
+[32m                "page_poison": "1",[0m
+[32m                "panic": "1",[0m
+[32m                "vsyscall": "emulate"[0m
+[32m            },[0m
+[32m            "ansible_config_file": "/Users/apaudy028/.cache/molecule/fakeOrigin/default/ansible.cfg",[0m
+[32m            "ansible_connection": "docker",[0m
+[32m            "ansible_date_time": {[0m
+[32m                "date": "2021-03-12",[0m
+[32m                "day": "12",[0m
+[32m                "epoch": "1615591380",[0m
+[32m                "hour": "23",[0m
+[32m                "iso8601": "2021-03-12T23:23:00Z",[0m
+[32m                "iso8601_basic": "20210312T232300156962",[0m
+[32m                "iso8601_basic_short": "20210312T232300",[0m
+[32m                "iso8601_micro": "2021-03-12T23:23:00.156962Z",[0m
+[32m                "minute": "23",[0m
+[32m                "month": "03",[0m
+[32m                "second": "00",[0m
+[32m                "time": "23:23:00",[0m
+[32m                "tz": "UTC",[0m
+[32m                "tz_offset": "+0000",[0m
+[32m                "weekday": "Friday",[0m
+[32m                "weekday_number": "5",[0m
+[32m                "weeknumber": "10",[0m
+[32m                "year": "2021"[0m
+[32m            },[0m
+[32m            "ansible_default_ipv4": {[0m
+[32m                "address": "172.17.0.2",[0m
+[32m                "alias": "eth0",[0m
+[32m                "broadcast": "172.17.255.255",[0m
+[32m                "gateway": "172.17.0.1",[0m
+[32m                "interface": "eth0",[0m
+[32m                "macaddress": "02:42:ac:11:00:02",[0m
+[32m                "mtu": 1500,[0m
+[32m                "netmask": "255.255.0.0",[0m
+[32m                "network": "172.17.0.0",[0m
+[32m                "type": "ether"[0m
+[32m            },[0m
+[32m            "ansible_default_ipv6": {},[0m
+[32m            "ansible_device_links": {[0m
+[32m                "ids": {},[0m
+[32m                "labels": {},[0m
+[32m                "masters": {},[0m
+[32m                "uuids": {}[0m
+[32m            },[0m
+[32m            "ansible_devices": {[0m
+[32m                "loop0": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "1",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "mq-deadline",[0m
+[32m                    "sectors": "0",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "0.00 Bytes",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "loop1": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "1",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "mq-deadline",[0m
+[32m                    "sectors": "0",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "0.00 Bytes",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "loop2": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "1",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "mq-deadline",[0m
+[32m                    "sectors": "0",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "0.00 Bytes",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "loop3": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "1",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "mq-deadline",[0m
+[32m                    "sectors": "0",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "0.00 Bytes",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "loop4": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "1",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "mq-deadline",[0m
+[32m                    "sectors": "0",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "0.00 Bytes",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "loop5": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "1",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "mq-deadline",[0m
+[32m                    "sectors": "0",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "0.00 Bytes",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "loop6": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "1",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "mq-deadline",[0m
+[32m                    "sectors": "0",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "0.00 Bytes",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "loop7": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "1",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "mq-deadline",[0m
+[32m                    "sectors": "0",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "0.00 Bytes",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "nbd0": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "mq-deadline",[0m
+[32m                    "sectors": "0",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "0.00 Bytes",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "nbd1": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "mq-deadline",[0m
+[32m                    "sectors": "0",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "0.00 Bytes",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "nbd10": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "mq-deadline",[0m
+[32m                    "sectors": "0",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "0.00 Bytes",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "nbd11": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "mq-deadline",[0m
+[32m                    "sectors": "0",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "0.00 Bytes",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "nbd12": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "mq-deadline",[0m
+[32m                    "sectors": "0",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "0.00 Bytes",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "nbd13": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "mq-deadline",[0m
+[32m                    "sectors": "0",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "0.00 Bytes",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "nbd14": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "mq-deadline",[0m
+[32m                    "sectors": "0",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "0.00 Bytes",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "nbd15": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "mq-deadline",[0m
+[32m                    "sectors": "0",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "0.00 Bytes",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "nbd2": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "mq-deadline",[0m
+[32m                    "sectors": "0",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "0.00 Bytes",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "nbd3": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "mq-deadline",[0m
+[32m                    "sectors": "0",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "0.00 Bytes",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "nbd4": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "mq-deadline",[0m
+[32m                    "sectors": "0",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "0.00 Bytes",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "nbd5": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "mq-deadline",[0m
+[32m                    "sectors": "0",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "0.00 Bytes",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "nbd6": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "mq-deadline",[0m
+[32m                    "sectors": "0",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "0.00 Bytes",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "nbd7": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "mq-deadline",[0m
+[32m                    "sectors": "0",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "0.00 Bytes",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "nbd8": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "mq-deadline",[0m
+[32m                    "sectors": "0",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "0.00 Bytes",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "nbd9": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "mq-deadline",[0m
+[32m                    "sectors": "0",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "0.00 Bytes",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "ram0": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "",[0m
+[32m                    "sectors": "131072",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "64.00 MB",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "ram1": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "",[0m
+[32m                    "sectors": "131072",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "64.00 MB",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "ram10": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "",[0m
+[32m                    "sectors": "131072",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "64.00 MB",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "ram11": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "",[0m
+[32m                    "sectors": "131072",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "64.00 MB",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "ram12": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "",[0m
+[32m                    "sectors": "131072",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "64.00 MB",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "ram13": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "",[0m
+[32m                    "sectors": "131072",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "64.00 MB",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "ram14": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "",[0m
+[32m                    "sectors": "131072",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "64.00 MB",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "ram15": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "",[0m
+[32m                    "sectors": "131072",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "64.00 MB",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "ram2": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "",[0m
+[32m                    "sectors": "131072",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "64.00 MB",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "ram3": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "",[0m
+[32m                    "sectors": "131072",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "64.00 MB",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "ram4": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "",[0m
+[32m                    "sectors": "131072",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "64.00 MB",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "ram5": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "",[0m
+[32m                    "sectors": "131072",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "64.00 MB",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "ram6": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "",[0m
+[32m                    "sectors": "131072",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "64.00 MB",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "ram7": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "",[0m
+[32m                    "sectors": "131072",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "64.00 MB",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "ram8": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "",[0m
+[32m                    "sectors": "131072",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "64.00 MB",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "ram9": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {},[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "0",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "",[0m
+[32m                    "sectors": "131072",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "64.00 MB",[0m
+[32m                    "support_discard": "0",[0m
+[32m                    "vendor": null,[0m
+[32m                    "virtual": 1[0m
+[32m                },[0m
+[32m                "vda": {[0m
+[32m                    "holders": [],[0m
+[32m                    "host": "",[0m
+[32m                    "links": {[0m
+[32m                        "ids": [],[0m
+[32m                        "labels": [],[0m
+[32m                        "masters": [],[0m
+[32m                        "uuids": [][0m
+[32m                    },[0m
+[32m                    "model": null,[0m
+[32m                    "partitions": {[0m
+[32m                        "vda1": {[0m
+[32m                            "holders": [],[0m
+[32m                            "links": {[0m
+[32m                                "ids": [],[0m
+[32m                                "labels": [],[0m
+[32m                                "masters": [],[0m
+[32m                                "uuids": [][0m
+[32m                            },[0m
+[32m                            "sectors": "124997632",[0m
+[32m                            "sectorsize": 512,[0m
+[32m                            "size": "59.60 GB",[0m
+[32m                            "start": "2048",[0m
+[32m                            "uuid": null[0m
+[32m                        }[0m
+[32m                    },[0m
+[32m                    "removable": "0",[0m
+[32m                    "rotational": "1",[0m
+[32m                    "sas_address": null,[0m
+[32m                    "sas_device_handle": null,[0m
+[32m                    "scheduler_mode": "mq-deadline",[0m
+[32m                    "sectors": "124999680",[0m
+[32m                    "sectorsize": "512",[0m
+[32m                    "size": "59.60 GB",[0m
+[32m                    "support_discard": "512",[0m
+[32m                    "vendor": "0x1af4",[0m
+[32m                    "virtual": 1[0m
+[32m                }[0m
+[32m            },[0m
+[32m            "ansible_diff_mode": true,[0m
+[32m            "ansible_distribution": "CentOS",[0m
+[32m            "ansible_distribution_file_parsed": true,[0m
+[32m            "ansible_distribution_file_path": "/etc/redhat-release",[0m
+[32m            "ansible_distribution_file_variety": "RedHat",[0m
+[32m            "ansible_distribution_major_version": "7",[0m
+[32m            "ansible_distribution_release": "Core",[0m
+[32m            "ansible_distribution_version": "7.8",[0m
+[32m            "ansible_dns": {[0m
+[32m                "nameservers": [[0m
+[32m                    "192.168.65.1"[0m
+[32m                ][0m
+[32m            },[0m
+[32m            "ansible_domain": "testlab.invalid",[0m
+[32m            "ansible_effective_group_id": 0,[0m
+[32m            "ansible_effective_user_id": 0,[0m
+[32m            "ansible_env": {[0m
+[32m                "HOME": "/root",[0m
+[32m                "HOSTNAME": "fo.testlab.invalid",[0m
+[32m                "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",[0m
+[32m                "PWD": "/",[0m
+[32m                "SHLVL": "2",[0m
+[32m                "_": "/usr/bin/python",[0m
+[32m                "container": "docker",[0m
+[32m                "pip_packages": "ansible"[0m
+[32m            },[0m
+[32m            "ansible_eth0": {[0m
+[32m                "active": true,[0m
+[32m                "device": "eth0",[0m
+[32m                "ipv4": {[0m
+[32m                    "address": "172.17.0.2",[0m
+[32m                    "broadcast": "172.17.255.255",[0m
+[32m                    "netmask": "255.255.0.0",[0m
+[32m                    "network": "172.17.0.0"[0m
+[32m                },[0m
+[32m                "macaddress": "02:42:ac:11:00:02",[0m
+[32m                "mtu": 1500,[0m
+[32m                "promisc": false,[0m
+[32m                "speed": 10000,[0m
+[32m                "type": "ether"[0m
+[32m            },[0m
+[32m            "ansible_facts": {[0m
+[32m                "all_ipv4_addresses": [[0m
+[32m                    "172.17.0.2"[0m
+[32m                ],[0m
+[32m                "all_ipv6_addresses": [],[0m
+[32m                "ansible_local": {},[0m
+[32m                "apparmor": {[0m
+[32m                    "status": "disabled"[0m
+[32m                },[0m
+[32m                "architecture": "x86_64",[0m
+[32m                "bios_date": "03/14/2014",[0m
+[32m                "bios_vendor": "BHYVE",[0m
+[32m                "bios_version": "1.00",[0m
+[32m                "board_asset_tag": "NA",[0m
+[32m                "board_name": "NA",[0m
+[32m                "board_serial": "NA",[0m
+[32m                "board_vendor": "NA",[0m
+[32m                "board_version": "NA",[0m
+[32m                "chassis_asset_tag": "None",[0m
+[32m                "chassis_serial": "None",[0m
+[32m                "chassis_vendor": "NA",[0m
+[32m                "chassis_version": "1.0",[0m
+[32m                "cmdline": {[0m
+[32m                    "console": "ttyS1",[0m
+[32m                    "earlyprintk": "serial",[0m
+[32m                    "mitigations": "off",[0m
+[32m                    "no_stf_barrier": true,[0m
+[32m                    "noibpb": true,[0m
+[32m                    "noibrs": true,[0m
+[32m                    "nospec_store_bypass_disable": true,[0m
+[32m                    "page_poison": "1",[0m
+[32m                    "panic": "1",[0m
+[32m                    "vsyscall": "emulate"[0m
+[32m                },[0m
+[32m                "date_time": {[0m
+[32m                    "date": "2021-03-12",[0m
+[32m                    "day": "12",[0m
+[32m                    "epoch": "1615591380",[0m
+[32m                    "hour": "23",[0m
+[32m                    "iso8601": "2021-03-12T23:23:00Z",[0m
+[32m                    "iso8601_basic": "20210312T232300156962",[0m
+[32m                    "iso8601_basic_short": "20210312T232300",[0m
+[32m                    "iso8601_micro": "2021-03-12T23:23:00.156962Z",[0m
+[32m                    "minute": "23",[0m
+[32m                    "month": "03",[0m
+[32m                    "second": "00",[0m
+[32m                    "time": "23:23:00",[0m
+[32m                    "tz": "UTC",[0m
+[32m                    "tz_offset": "+0000",[0m
+[32m                    "weekday": "Friday",[0m
+[32m                    "weekday_number": "5",[0m
+[32m                    "weeknumber": "10",[0m
+[32m                    "year": "2021"[0m
+[32m                },[0m
+[32m                "default_ipv4": {[0m
+[32m                    "address": "172.17.0.2",[0m
+[32m                    "alias": "eth0",[0m
+[32m                    "broadcast": "172.17.255.255",[0m
+[32m                    "gateway": "172.17.0.1",[0m
+[32m                    "interface": "eth0",[0m
+[32m                    "macaddress": "02:42:ac:11:00:02",[0m
+[32m                    "mtu": 1500,[0m
+[32m                    "netmask": "255.255.0.0",[0m
+[32m                    "network": "172.17.0.0",[0m
+[32m                    "type": "ether"[0m
+[32m                },[0m
+[32m                "default_ipv6": {},[0m
+[32m                "device_links": {[0m
+[32m                    "ids": {},[0m
+[32m                    "labels": {},[0m
+[32m                    "masters": {},[0m
+[32m                    "uuids": {}[0m
+[32m                },[0m
+[32m                "devices": {[0m
+[32m                    "loop0": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "1",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "mq-deadline",[0m
+[32m                        "sectors": "0",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "0.00 Bytes",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "loop1": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "1",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "mq-deadline",[0m
+[32m                        "sectors": "0",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "0.00 Bytes",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "loop2": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "1",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "mq-deadline",[0m
+[32m                        "sectors": "0",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "0.00 Bytes",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "loop3": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "1",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "mq-deadline",[0m
+[32m                        "sectors": "0",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "0.00 Bytes",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "loop4": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "1",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "mq-deadline",[0m
+[32m                        "sectors": "0",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "0.00 Bytes",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "loop5": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "1",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "mq-deadline",[0m
+[32m                        "sectors": "0",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "0.00 Bytes",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "loop6": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "1",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "mq-deadline",[0m
+[32m                        "sectors": "0",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "0.00 Bytes",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "loop7": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "1",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "mq-deadline",[0m
+[32m                        "sectors": "0",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "0.00 Bytes",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "nbd0": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "mq-deadline",[0m
+[32m                        "sectors": "0",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "0.00 Bytes",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "nbd1": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "mq-deadline",[0m
+[32m                        "sectors": "0",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "0.00 Bytes",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "nbd10": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "mq-deadline",[0m
+[32m                        "sectors": "0",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "0.00 Bytes",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "nbd11": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "mq-deadline",[0m
+[32m                        "sectors": "0",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "0.00 Bytes",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "nbd12": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "mq-deadline",[0m
+[32m                        "sectors": "0",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "0.00 Bytes",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "nbd13": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "mq-deadline",[0m
+[32m                        "sectors": "0",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "0.00 Bytes",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "nbd14": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "mq-deadline",[0m
+[32m                        "sectors": "0",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "0.00 Bytes",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "nbd15": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "mq-deadline",[0m
+[32m                        "sectors": "0",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "0.00 Bytes",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "nbd2": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "mq-deadline",[0m
+[32m                        "sectors": "0",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "0.00 Bytes",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "nbd3": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "mq-deadline",[0m
+[32m                        "sectors": "0",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "0.00 Bytes",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "nbd4": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "mq-deadline",[0m
+[32m                        "sectors": "0",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "0.00 Bytes",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "nbd5": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "mq-deadline",[0m
+[32m                        "sectors": "0",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "0.00 Bytes",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "nbd6": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "mq-deadline",[0m
+[32m                        "sectors": "0",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "0.00 Bytes",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "nbd7": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "mq-deadline",[0m
+[32m                        "sectors": "0",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "0.00 Bytes",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "nbd8": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "mq-deadline",[0m
+[32m                        "sectors": "0",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "0.00 Bytes",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "nbd9": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "mq-deadline",[0m
+[32m                        "sectors": "0",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "0.00 Bytes",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "ram0": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "",[0m
+[32m                        "sectors": "131072",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "64.00 MB",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "ram1": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "",[0m
+[32m                        "sectors": "131072",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "64.00 MB",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "ram10": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "",[0m
+[32m                        "sectors": "131072",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "64.00 MB",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "ram11": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "",[0m
+[32m                        "sectors": "131072",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "64.00 MB",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "ram12": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "",[0m
+[32m                        "sectors": "131072",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "64.00 MB",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "ram13": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "",[0m
+[32m                        "sectors": "131072",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "64.00 MB",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "ram14": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "",[0m
+[32m                        "sectors": "131072",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "64.00 MB",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "ram15": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "",[0m
+[32m                        "sectors": "131072",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "64.00 MB",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "ram2": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "",[0m
+[32m                        "sectors": "131072",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "64.00 MB",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "ram3": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "",[0m
+[32m                        "sectors": "131072",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "64.00 MB",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "ram4": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "",[0m
+[32m                        "sectors": "131072",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "64.00 MB",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "ram5": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "",[0m
+[32m                        "sectors": "131072",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "64.00 MB",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "ram6": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "",[0m
+[32m                        "sectors": "131072",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "64.00 MB",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "ram7": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "",[0m
+[32m                        "sectors": "131072",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "64.00 MB",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "ram8": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "",[0m
+[32m                        "sectors": "131072",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "64.00 MB",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "ram9": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {},[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "0",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "",[0m
+[32m                        "sectors": "131072",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "64.00 MB",[0m
+[32m                        "support_discard": "0",[0m
+[32m                        "vendor": null,[0m
+[32m                        "virtual": 1[0m
+[32m                    },[0m
+[32m                    "vda": {[0m
+[32m                        "holders": [],[0m
+[32m                        "host": "",[0m
+[32m                        "links": {[0m
+[32m                            "ids": [],[0m
+[32m                            "labels": [],[0m
+[32m                            "masters": [],[0m
+[32m                            "uuids": [][0m
+[32m                        },[0m
+[32m                        "model": null,[0m
+[32m                        "partitions": {[0m
+[32m                            "vda1": {[0m
+[32m                                "holders": [],[0m
+[32m                                "links": {[0m
+[32m                                    "ids": [],[0m
+[32m                                    "labels": [],[0m
+[32m                                    "masters": [],[0m
+[32m                                    "uuids": [][0m
+[32m                                },[0m
+[32m                                "sectors": "124997632",[0m
+[32m                                "sectorsize": 512,[0m
+[32m                                "size": "59.60 GB",[0m
+[32m                                "start": "2048",[0m
+[32m                                "uuid": null[0m
+[32m                            }[0m
+[32m                        },[0m
+[32m                        "removable": "0",[0m
+[32m                        "rotational": "1",[0m
+[32m                        "sas_address": null,[0m
+[32m                        "sas_device_handle": null,[0m
+[32m                        "scheduler_mode": "mq-deadline",[0m
+[32m                        "sectors": "124999680",[0m
+[32m                        "sectorsize": "512",[0m
+[32m                        "size": "59.60 GB",[0m
+[32m                        "support_discard": "512",[0m
+[32m                        "vendor": "0x1af4",[0m
+[32m                        "virtual": 1[0m
+[32m                    }[0m
+[32m                },[0m
+[32m                "discovered_interpreter_python": "/usr/bin/python",[0m
+[32m                "distribution": "CentOS",[0m
+[32m                "distribution_file_parsed": true,[0m
+[32m                "distribution_file_path": "/etc/redhat-release",[0m
+[32m                "distribution_file_variety": "RedHat",[0m
+[32m                "distribution_major_version": "7",[0m
+[32m                "distribution_release": "Core",[0m
+[32m                "distribution_version": "7.8",[0m
+[32m                "dns": {[0m
+[32m                    "nameservers": [[0m
+[32m                        "192.168.65.1"[0m
+[32m                    ][0m
+[32m                },[0m
+[32m                "domain": "testlab.invalid",[0m
+[32m                "effective_group_id": 0,[0m
+[32m                "effective_user_id": 0,[0m
+[32m                "env": {[0m
+[32m                    "HOME": "/root",[0m
+[32m                    "HOSTNAME": "fo.testlab.invalid",[0m
+[32m                    "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",[0m
+[32m                    "PWD": "/",[0m
+[32m                    "SHLVL": "2",[0m
+[32m                    "_": "/usr/bin/python",[0m
+[32m                    "container": "docker",[0m
+[32m                    "pip_packages": "ansible"[0m
+[32m                },[0m
+[32m                "eth0": {[0m
+[32m                    "active": true,[0m
+[32m                    "device": "eth0",[0m
+[32m                    "ipv4": {[0m
+[32m                        "address": "172.17.0.2",[0m
+[32m                        "broadcast": "172.17.255.255",[0m
+[32m                        "netmask": "255.255.0.0",[0m
+[32m                        "network": "172.17.0.0"[0m
+[32m                    },[0m
+[32m                    "macaddress": "02:42:ac:11:00:02",[0m
+[32m                    "mtu": 1500,[0m
+[32m                    "promisc": false,[0m
+[32m                    "speed": 10000,[0m
+[32m                    "type": "ether"[0m
+[32m                },[0m
+[32m                "fibre_channel_wwn": [],[0m
+[32m                "fips": false,[0m
+[32m                "form_factor": "Unknown",[0m
+[32m                "fqdn": "fo.testlab.invalid",[0m
+[32m                "gather_subset": [[0m
+[32m                    "all"[0m
+[32m                ],[0m
+[32m                "hostname": "fo",[0m
+[32m                "hostnqn": "",[0m
+[32m                "interfaces": [[0m
+[32m                    "lo",[0m
+[32m                    "tunl0",[0m
+[32m                    "ip6tnl0",[0m
+[32m                    "eth0"[0m
+[32m                ],[0m
+[32m                "ip6tnl0": {[0m
+[32m                    "active": false,[0m
+[32m                    "device": "ip6tnl0",[0m
+[32m                    "macaddress": "00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00",[0m
+[32m                    "mtu": 1452,[0m
+[32m                    "promisc": false,[0m
+[32m                    "type": "unknown"[0m
+[32m                },[0m
+[32m                "is_chroot": false,[0m
+[32m                "iscsi_iqn": "",[0m
+[32m                "kernel": "4.19.121-linuxkit",[0m
+[32m                "kernel_version": "#1 SMP Tue Dec 1 17:50:32 UTC 2020",[0m
+[32m                "lo": {[0m
+[32m                    "active": true,[0m
+[32m                    "device": "lo",[0m
+[32m                    "ipv4": {[0m
+[32m                        "address": "127.0.0.1",[0m
+[32m                        "broadcast": "",[0m
+[32m                        "netmask": "255.0.0.0",[0m
+[32m                        "network": "127.0.0.0"[0m
+[32m                    },[0m
+[32m                    "mtu": 65536,[0m
+[32m                    "promisc": false,[0m
+[32m                    "type": "loopback"[0m
+[32m                },[0m
+[32m                "lsb": {},[0m
+[32m                "machine": "x86_64",[0m
+[32m                "machine_id": "845d9c95370a4705af5235726273e93b",[0m
+[32m                "memfree_mb": 554,[0m
+[32m                "memory_mb": {[0m
+[32m                    "nocache": {[0m
+[32m                        "free": 1433,[0m
+[32m                        "used": 557[0m
+[32m                    },[0m
+[32m                    "real": {[0m
+[32m                        "free": 554,[0m
+[32m                        "total": 1990,[0m
+[32m                        "used": 1436[0m
+[32m                    },[0m
+[32m                    "swap": {[0m
+[32m                        "cached": 0,[0m
+[32m                        "free": 964,[0m
+[32m                        "total": 1023,[0m
+[32m                        "used": 59[0m
+[32m                    }[0m
+[32m                },[0m
+[32m                "memtotal_mb": 1990,[0m
+[32m                "module_setup": true,[0m
+[32m                "mounts": [[0m
+[32m                    {[0m
+[32m                        "block_available": 9571268,[0m
+[32m                        "block_size": 4096,[0m
+[32m                        "block_total": 15313873,[0m
+[32m                        "block_used": 5742605,[0m
+[32m                        "device": "/dev/vda1",[0m
+[32m                        "fstype": "ext4",[0m
+[32m                        "inode_available": 3212698,[0m
+[32m                        "inode_total": 3907584,[0m
+[32m                        "inode_used": 694886,[0m
+[32m                        "mount": "/etc/hosts",[0m
+[32m                        "options": "rw,relatime,bind",[0m
+[32m                        "size_available": 39203913728,[0m
+[32m                        "size_total": 62725623808,[0m
+[32m                        "uuid": "N/A"[0m
+[32m                    },[0m
+[32m                    {[0m
+[32m                        "block_available": 9571268,[0m
+[32m                        "block_size": 4096,[0m
+[32m                        "block_total": 15313873,[0m
+[32m                        "block_used": 5742605,[0m
+[32m                        "device": "/dev/vda1",[0m
+[32m                        "fstype": "ext4",[0m
+[32m                        "inode_available": 3212698,[0m
+[32m                        "inode_total": 3907584,[0m
+[32m                        "inode_used": 694886,[0m
+[32m                        "mount": "/etc/hostname",[0m
+[32m                        "options": "rw,relatime,bind",[0m
+[32m                        "size_available": 39203913728,[0m
+[32m                        "size_total": 62725623808,[0m
+[32m                        "uuid": "N/A"[0m
+[32m                    },[0m
+[32m                    {[0m
+[32m                        "block_available": 9571268,[0m
+[32m                        "block_size": 4096,[0m
+[32m                        "block_total": 15313873,[0m
+[32m                        "block_used": 5742605,[0m
+[32m                        "device": "/dev/vda1",[0m
+[32m                        "fstype": "ext4",[0m
+[32m                        "inode_available": 3212698,[0m
+[32m                        "inode_total": 3907584,[0m
+[32m                        "inode_used": 694886,[0m
+[32m                        "mount": "/etc/resolv.conf",[0m
+[32m                        "options": "rw,relatime,bind",[0m
+[32m                        "size_available": 39203913728,[0m
+[32m                        "size_total": 62725623808,[0m
+[32m                        "uuid": "N/A"[0m
+[32m                    }[0m
+[32m                ],[0m
+[32m                "nodename": "fo.testlab.invalid",[0m
+[32m                "os_family": "RedHat",[0m
+[32m                "pkg_mgr": "yum",[0m
+[32m                "proc_cmdline": {[0m
+[32m                    "console": [[0m
+[32m                        "ttyS0",[0m
+[32m                        "ttyS1"[0m
+[32m                    ],[0m
+[32m                    "earlyprintk": "serial",[0m
+[32m                    "mitigations": "off",[0m
+[32m                    "no_stf_barrier": true,[0m
+[32m                    "noibpb": true,[0m
+[32m                    "noibrs": true,[0m
+[32m                    "nospec_store_bypass_disable": true,[0m
+[32m                    "page_poison": "1",[0m
+[32m                    "panic": "1",[0m
+[32m                    "vsyscall": "emulate"[0m
+[32m                },[0m
+[32m                "processor": [[0m
+[32m                    "0",[0m
+[32m                    "GenuineIntel",[0m
+[32m                    "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",[0m
+[32m                    "1",[0m
+[32m                    "GenuineIntel",[0m
+[32m                    "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",[0m
+[32m                    "2",[0m
+[32m                    "GenuineIntel",[0m
+[32m                    "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",[0m
+[32m                    "3",[0m
+[32m                    "GenuineIntel",[0m
+[32m                    "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz"[0m
+[32m                ],[0m
+[32m                "processor_cores": 1,[0m
+[32m                "processor_count": 4,[0m
+[32m                "processor_nproc": 4,[0m
+[32m                "processor_threads_per_core": 1,[0m
+[32m                "processor_vcpus": 4,[0m
+[32m                "product_name": "BHYVE",[0m
+[32m                "product_serial": "None",[0m
+[32m                "product_uuid": "76d64f84-0000-0000-9981-fce6803e49cc",[0m
+[32m                "product_version": "1.0",[0m
+[32m                "python": {[0m
+[32m                    "executable": "/usr/bin/python",[0m
+[32m                    "has_sslcontext": true,[0m
+[32m                    "type": "CPython",[0m
+[32m                    "version": {[0m
+[32m                        "major": 2,[0m
+[32m                        "micro": 5,[0m
+[32m                        "minor": 7,[0m
+[32m                        "releaselevel": "final",[0m
+[32m                        "serial": 0[0m
+[32m                    },[0m
+[32m                    "version_info": [[0m
+[32m                        2,[0m
+[32m                        7,[0m
+[32m                        5,[0m
+[32m                        "final",[0m
+[32m                        0[0m
+[32m                    ][0m
+[32m                },[0m
+[32m                "python_version": "2.7.5",[0m
+[32m                "real_group_id": 0,[0m
+[32m                "real_user_id": 0,[0m
+[32m                "selinux": {[0m
+[32m                    "status": "Missing selinux Python library"[0m
+[32m                },[0m
+[32m                "selinux_python_present": false,[0m
+[32m                "service_mgr": "systemd",[0m
+[32m                "swapfree_mb": 964,[0m
+[32m                "swaptotal_mb": 1023,[0m
+[32m                "system": "Linux",[0m
+[32m                "system_capabilities": [[0m
+[32m                    "cap_chown",[0m
+[32m                    "cap_dac_override",[0m
+[32m                    "cap_dac_read_search",[0m
+[32m                    "cap_fowner",[0m
+[32m                    "cap_fsetid",[0m
+[32m                    "cap_kill",[0m
+[32m                    "cap_setgid",[0m
+[32m                    "cap_setuid",[0m
+[32m                    "cap_setpcap",[0m
+[32m                    "cap_linux_immutable",[0m
+[32m                    "cap_net_bind_service",[0m
+[32m                    "cap_net_broadcast",[0m
+[32m                    "cap_net_admin",[0m
+[32m                    "cap_net_raw",[0m
+[32m                    "cap_ipc_lock",[0m
+[32m                    "cap_ipc_owner",[0m
+[32m                    "cap_sys_module",[0m
+[32m                    "cap_sys_rawio",[0m
+[32m                    "cap_sys_chroot",[0m
+[32m                    "cap_sys_ptrace",[0m
+[32m                    "cap_sys_pacct",[0m
+[32m                    "cap_sys_admin",[0m
+[32m                    "cap_sys_boot",[0m
+[32m                    "cap_sys_nice",[0m
+[32m                    "cap_sys_resource",[0m
+[32m                    "cap_sys_time",[0m
+[32m                    "cap_sys_tty_config",[0m
+[32m                    "cap_mknod",[0m
+[32m                    "cap_lease",[0m
+[32m                    "cap_audit_write",[0m
+[32m                    "cap_audit_control",[0m
+[32m                    "cap_setfcap",[0m
+[32m                    "cap_mac_override",[0m
+[32m                    "cap_mac_admin",[0m
+[32m                    "cap_syslog",[0m
+[32m                    "35",[0m
+[32m                    "36",[0m
+[32m                    "37+eip"[0m
+[32m                ],[0m
+[32m                "system_capabilities_enforced": "True",[0m
+[32m                "system_vendor": "NA",[0m
+[32m                "tunl0": {[0m
+[32m                    "active": false,[0m
+[32m                    "device": "tunl0",[0m
+[32m                    "macaddress": "00:00:00:00",[0m
+[32m                    "mtu": 1480,[0m
+[32m                    "promisc": false,[0m
+[32m                    "type": "unknown"[0m
+[32m                },[0m
+[32m                "uptime_seconds": 356827,[0m
+[32m                "user_dir": "/root",[0m
+[32m                "user_gecos": "root",[0m
+[32m                "user_gid": 0,[0m
+[32m                "user_id": "root",[0m
+[32m                "user_shell": "/bin/bash",[0m
+[32m                "user_uid": 0,[0m
+[32m                "userspace_architecture": "x86_64",[0m
+[32m                "userspace_bits": "64",[0m
+[32m                "virtualization_role": "guest",[0m
+[32m                "virtualization_type": "docker"[0m
+[32m            },[0m
+[32m            "ansible_fibre_channel_wwn": [],[0m
+[32m            "ansible_fips": false,[0m
+[32m            "ansible_forks": 50,[0m
+[32m            "ansible_form_factor": "Unknown",[0m
+[32m            "ansible_fqdn": "fo.testlab.invalid",[0m
+[32m            "ansible_host": "fo.testlab.invalid",[0m
+[32m            "ansible_hostname": "fo",[0m
+[32m            "ansible_hostnqn": "",[0m
+[32m            "ansible_interfaces": [[0m
+[32m                "lo",[0m
+[32m                "tunl0",[0m
+[32m                "ip6tnl0",[0m
+[32m                "eth0"[0m
+[32m            ],[0m
+[32m            "ansible_inventory_sources": [[0m
+[32m                "/Users/apaudy028/.cache/molecule/fakeOrigin/default/inventory"[0m
+[32m            ],[0m
+[32m            "ansible_ip6tnl0": {[0m
+[32m                "active": false,[0m
+[32m                "device": "ip6tnl0",[0m
+[32m                "macaddress": "00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00",[0m
+[32m                "mtu": 1452,[0m
+[32m                "promisc": false,[0m
+[32m                "type": "unknown"[0m
+[32m            },[0m
+[32m            "ansible_is_chroot": false,[0m
+[32m            "ansible_iscsi_iqn": "",[0m
+[32m            "ansible_kernel": "4.19.121-linuxkit",[0m
+[32m            "ansible_kernel_version": "#1 SMP Tue Dec 1 17:50:32 UTC 2020",[0m
+[32m            "ansible_lo": {[0m
+[32m                "active": true,[0m
+[32m                "device": "lo",[0m
+[32m                "ipv4": {[0m
+[32m                    "address": "127.0.0.1",[0m
+[32m                    "broadcast": "",[0m
+[32m                    "netmask": "255.0.0.0",[0m
+[32m                    "network": "127.0.0.0"[0m
+[32m                },[0m
+[32m                "mtu": 65536,[0m
+[32m                "promisc": false,[0m
+[32m                "type": "loopback"[0m
+[32m            },[0m
+[32m            "ansible_local": {},[0m
+[32m            "ansible_lsb": {},[0m
+[32m            "ansible_machine": "x86_64",[0m
+[32m            "ansible_machine_id": "845d9c95370a4705af5235726273e93b",[0m
+[32m            "ansible_memfree_mb": 554,[0m
+[32m            "ansible_memory_mb": {[0m
+[32m                "nocache": {[0m
+[32m                    "free": 1433,[0m
+[32m                    "used": 557[0m
+[32m                },[0m
+[32m                "real": {[0m
+[32m                    "free": 554,[0m
+[32m                    "total": 1990,[0m
+[32m                    "used": 1436[0m
+[32m                },[0m
+[32m                "swap": {[0m
+[32m                    "cached": 0,[0m
+[32m                    "free": 964,[0m
+[32m                    "total": 1023,[0m
+[32m                    "used": 59[0m
+[32m                }[0m
+[32m            },[0m
+[32m            "ansible_memtotal_mb": 1990,[0m
+[32m            "ansible_mounts": [[0m
+[32m                {[0m
+[32m                    "block_available": 9571268,[0m
+[32m                    "block_size": 4096,[0m
+[32m                    "block_total": 15313873,[0m
+[32m                    "block_used": 5742605,[0m
+[32m                    "device": "/dev/vda1",[0m
+[32m                    "fstype": "ext4",[0m
+[32m                    "inode_available": 3212698,[0m
+[32m                    "inode_total": 3907584,[0m
+[32m                    "inode_used": 694886,[0m
+[32m                    "mount": "/etc/hosts",[0m
+[32m                    "options": "rw,relatime,bind",[0m
+[32m                    "size_available": 39203913728,[0m
+[32m                    "size_total": 62725623808,[0m
+[32m                    "uuid": "N/A"[0m
+[32m                },[0m
+[32m                {[0m
+[32m                    "block_available": 9571268,[0m
+[32m                    "block_size": 4096,[0m
+[32m                    "block_total": 15313873,[0m
+[32m                    "block_used": 5742605,[0m
+[32m                    "device": "/dev/vda1",[0m
+[32m                    "fstype": "ext4",[0m
+[32m                    "inode_available": 3212698,[0m
+[32m                    "inode_total": 3907584,[0m
+[32m                    "inode_used": 694886,[0m
+[32m                    "mount": "/etc/hostname",[0m
+[32m                    "options": "rw,relatime,bind",[0m
+[32m                    "size_available": 39203913728,[0m
+[32m                    "size_total": 62725623808,[0m
+[32m                    "uuid": "N/A"[0m
+[32m                },[0m
+[32m                {[0m
+[32m                    "block_available": 9571268,[0m
+[32m                    "block_size": 4096,[0m
+[32m                    "block_total": 15313873,[0m
+[32m                    "block_used": 5742605,[0m
+[32m                    "device": "/dev/vda1",[0m
+[32m                    "fstype": "ext4",[0m
+[32m                    "inode_available": 3212698,[0m
+[32m                    "inode_total": 3907584,[0m
+[32m                    "inode_used": 694886,[0m
+[32m                    "mount": "/etc/resolv.conf",[0m
+[32m                    "options": "rw,relatime,bind",[0m
+[32m                    "size_available": 39203913728,[0m
+[32m                    "size_total": 62725623808,[0m
+[32m                    "uuid": "N/A"[0m
+[32m                }[0m
+[32m            ],[0m
+[32m            "ansible_nodename": "fo.testlab.invalid",[0m
+[32m            "ansible_os_family": "RedHat",[0m
+[32m            "ansible_pkg_mgr": "yum",[0m
+[32m            "ansible_playbook_python": "/usr/local/opt/python@3.8/bin/python3.8",[0m
+[32m            "ansible_proc_cmdline": {[0m
+[32m                "console": [[0m
+[32m                    "ttyS0",[0m
+[32m                    "ttyS1"[0m
+[32m                ],[0m
+[32m                "earlyprintk": "serial",[0m
+[32m                "mitigations": "off",[0m
+[32m                "no_stf_barrier": true,[0m
+[32m                "noibpb": true,[0m
+[32m                "noibrs": true,[0m
+[32m                "nospec_store_bypass_disable": true,[0m
+[32m                "page_poison": "1",[0m
+[32m                "panic": "1",[0m
+[32m                "vsyscall": "emulate"[0m
+[32m            },[0m
+[32m            "ansible_processor": [[0m
+[32m                "0",[0m
+[32m                "GenuineIntel",[0m
+[32m                "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",[0m
+[32m                "1",[0m
+[32m                "GenuineIntel",[0m
+[32m                "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",[0m
+[32m                "2",[0m
+[32m                "GenuineIntel",[0m
+[32m                "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",[0m
+[32m                "3",[0m
+[32m                "GenuineIntel",[0m
+[32m                "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz"[0m
+[32m            ],[0m
+[32m            "ansible_processor_cores": 1,[0m
+[32m            "ansible_processor_count": 4,[0m
+[32m            "ansible_processor_nproc": 4,[0m
+[32m            "ansible_processor_threads_per_core": 1,[0m
+[32m            "ansible_processor_vcpus": 4,[0m
+[32m            "ansible_product_name": "BHYVE",[0m
+[32m            "ansible_product_serial": "None",[0m
+[32m            "ansible_product_uuid": "76d64f84-0000-0000-9981-fce6803e49cc",[0m
+[32m            "ansible_product_version": "1.0",[0m
+[32m            "ansible_python": {[0m
+[32m                "executable": "/usr/bin/python",[0m
+[32m                "has_sslcontext": true,[0m
+[32m                "type": "CPython",[0m
+[32m                "version": {[0m
+[32m                    "major": 2,[0m
+[32m                    "micro": 5,[0m
+[32m                    "minor": 7,[0m
+[32m                    "releaselevel": "final",[0m
+[32m                    "serial": 0[0m
+[32m                },[0m
+[32m                "version_info": [[0m
+[32m                    2,[0m
+[32m                    7,[0m
+[32m                    5,[0m
+[32m                    "final",[0m
+[32m                    0[0m
+[32m                ][0m
+[32m            },[0m
+[32m            "ansible_python_version": "2.7.5",[0m
+[32m            "ansible_real_group_id": 0,[0m
+[32m            "ansible_real_user_id": 0,[0m
+[32m            "ansible_run_tags": [[0m
+[32m                "all"[0m
+[32m            ],[0m
+[32m            "ansible_selinux": {[0m
+[32m                "status": "Missing selinux Python library"[0m
+[32m            },[0m
+[32m            "ansible_selinux_python_present": false,[0m
+[32m            "ansible_service_mgr": "systemd",[0m
+[32m            "ansible_skip_tags": [[0m
+[32m                "notest",[0m
+[32m                "molecule-notest"[0m
+[32m            ],[0m
+[32m            "ansible_swapfree_mb": 964,[0m
+[32m            "ansible_swaptotal_mb": 1023,[0m
+[32m            "ansible_system": "Linux",[0m
+[32m            "ansible_system_capabilities": [[0m
+[32m                "cap_chown",[0m
+[32m                "cap_dac_override",[0m
+[32m                "cap_dac_read_search",[0m
+[32m                "cap_fowner",[0m
+[32m                "cap_fsetid",[0m
+[32m                "cap_kill",[0m
+[32m                "cap_setgid",[0m
+[32m                "cap_setuid",[0m
+[32m                "cap_setpcap",[0m
+[32m                "cap_linux_immutable",[0m
+[32m                "cap_net_bind_service",[0m
+[32m                "cap_net_broadcast",[0m
+[32m                "cap_net_admin",[0m
+[32m                "cap_net_raw",[0m
+[32m                "cap_ipc_lock",[0m
+[32m                "cap_ipc_owner",[0m
+[32m                "cap_sys_module",[0m
+[32m                "cap_sys_rawio",[0m
+[32m                "cap_sys_chroot",[0m
+[32m                "cap_sys_ptrace",[0m
+[32m                "cap_sys_pacct",[0m
+[32m                "cap_sys_admin",[0m
+[32m                "cap_sys_boot",[0m
+[32m                "cap_sys_nice",[0m
+[32m                "cap_sys_resource",[0m
+[32m                "cap_sys_time",[0m
+[32m                "cap_sys_tty_config",[0m
+[32m                "cap_mknod",[0m
+[32m                "cap_lease",[0m
+[32m                "cap_audit_write",[0m
+[32m                "cap_audit_control",[0m
+[32m                "cap_setfcap",[0m
+[32m                "cap_mac_override",[0m
+[32m                "cap_mac_admin",[0m
+[32m                "cap_syslog",[0m
+[32m                "35",[0m
+[32m                "36",[0m
+[32m                "37+eip"[0m
+[32m            ],[0m
+[32m            "ansible_system_capabilities_enforced": "True",[0m
+[32m            "ansible_system_vendor": "NA",[0m
+[32m            "ansible_tunl0": {[0m
+[32m                "active": false,[0m
+[32m                "device": "tunl0",[0m
+[32m                "macaddress": "00:00:00:00",[0m
+[32m                "mtu": 1480,[0m
+[32m                "promisc": false,[0m
+[32m                "type": "unknown"[0m
+[32m            },[0m
+[32m            "ansible_uptime_seconds": 356827,[0m
+[32m            "ansible_user_dir": "/root",[0m
+[32m            "ansible_user_gecos": "root",[0m
+[32m            "ansible_user_gid": 0,[0m
+[32m            "ansible_user_id": "root",[0m
+[32m            "ansible_user_shell": "/bin/bash",[0m
+[32m            "ansible_user_uid": 0,[0m
+[32m            "ansible_userspace_architecture": "x86_64",[0m
+[32m            "ansible_userspace_bits": "64",[0m
+[32m            "ansible_verbosity": 3,[0m
+[32m            "ansible_version": {[0m
+[32m                "full": "2.10.6",[0m
+[32m                "major": 2,[0m
+[32m                "minor": 10,[0m
+[32m                "revision": 6,[0m
+[32m                "string": "2.10.6"[0m
+[32m            },[0m
+[32m            "ansible_virtualization_role": "guest",[0m
+[32m            "ansible_virtualization_type": "docker",[0m
+[32m            "cdn": "ALL",[0m
+[32m            "component": "fakeOrigin",[0m
+[32m            "discovered_interpreter_python": "/usr/bin/python",[0m
+[32m            "docker_storage_driver": "vfs",[0m
+[32m            "gather_subset": [[0m
+[32m                "all"[0m
+[32m            ],[0m
+[32m            "group_names": [[0m
+[32m                "docker_hosts",[0m
+[32m                "fakeOrigin"[0m
+[32m            ],[0m
+[32m            "groups": {[0m
+[32m                "all": [[0m
+[32m                    "fo.testlab.invalid"[0m
+[32m                ],[0m
+[32m                "docker_hosts": [[0m
+[32m                    "fo.testlab.invalid"[0m
+[32m                ],[0m
+[32m                "fakeOrigin": [[0m
+[32m                    "fo.testlab.invalid"[0m
+[32m                ],[0m
+[32m                "ungrouped": [][0m
+[32m            },[0m
+[32m            "inventory_dir": "/Users/apaudy028/.cache/molecule/fakeOrigin/default/inventory",[0m
+[32m            "inventory_file": "/Users/apaudy028/.cache/molecule/fakeOrigin/default/inventory/ansible_inventory.yml",[0m
+[32m            "inventory_hostname": "fo.testlab.invalid",[0m
+[32m            "inventory_hostname_short": "fo",[0m
+[32m            "module_setup": true,[0m
+[32m            "molecule_ephemeral_directory": "/Users/apaudy028/.cache/molecule/fakeOrigin/default",[0m
+[32m            "molecule_file": "/Users/apaudy028/.cache/molecule/fakeOrigin/default/molecule.yml",[0m
+[32m            "molecule_instance_config": "/Users/apaudy028/.cache/molecule/fakeOrigin/default/instance_config.yml",[0m
+[32m            "molecule_no_log": false,[0m
+[32m            "molecule_scenario_directory": "/Users/apaudy028/public-github/ash-trafficcontrol-copy/infrastructure/ansible/roles/fakeOrigin/molecule/default",[0m
+[32m            "molecule_yml": {[0m
+[32m                "dependency": {[0m
+[32m                    "command": null,[0m
+[32m                    "enabled": true,[0m
+[32m                    "env": {},[0m
+[32m                    "name": "galaxy",[0m
+[32m                    "options": {}[0m
+[32m                },[0m
+[32m                "driver": {[0m
+[32m                    "name": "docker",[0m
+[32m                    "options": {[0m
+[32m                        "managed": true[0m
+[32m                    },[0m
+[32m                    "provider": {[0m
+[32m                        "name": null[0m
+[32m                    },[0m
+[32m                    "safe_files": [],[0m
+[32m                    "ssh_connection_options": [][0m
+[32m                },[0m
+[32m                "lint": "set -e\nyamllint .\nansible-lint -c ../molecule_shared/.ansible-lint .\n",[0m
+[32m                "platforms": [[0m
+[32m                    {[0m
+[32m                        "capabilities": [[0m
+[32m                            "SYS_ADMIN"[0m
+[32m                        ],[0m
+[32m                        "command": "",[0m
+[32m                        "groups": [[0m
+[32m                            "docker_hosts",[0m
+[32m                            "fakeOrigin"[0m
+[32m                        ],[0m
+[32m                        "image": "geerlingguy/docker-centos7-ansible:latest",[0m
+[32m                        "name": "fo.testlab.invalid",[0m
+[32m                        "pre_build_image": true,[0m
+[32m                        "privileged": true,[0m
+[32m                        "tmpfs": [[0m
+[32m                            "/run",[0m
+[32m                            "/tmp"[0m
+[32m                        ],[0m
+[32m                        "volumes": [[0m
+[32m                            "/Users/apaudy028/.cache/molecule/fakeOrigin/default:/molecule",[0m
+[32m                            "/sys/fs/cgroup:/sys/fs/cgroup:ro"[0m
+[32m                        ][0m
+[32m                    }[0m
+[32m                ],[0m
+[32m                "provisioner": {[0m
+[32m                    "ansible_args": [],[0m
+[32m                    "children": {},[0m
+[32m                    "config_options": {},[0m
+[32m                    "connection_options": {},[0m
+[32m                    "env": {},[0m
+[32m                    "inventory": {[0m
+[32m                        "group_vars": {[0m
+[32m                            "docker_hosts": {[0m
+[32m                                "docker_storage_driver": "vfs"[0m
+[32m                            }[0m
+[32m                        },[0m
+[32m                        "host_vars": {[0m
+[32m                            "fo.testlab.invalid": {[0m
+[32m                                "ansible_host": "fo.testlab.invalid",[0m
+[32m                                "cdn": "ALL",[0m
+[32m                                "component": "fakeOrigin"[0m
+[32m                            }[0m
+[32m                        },[0m
+[32m                        "hosts": {},[0m
+[32m                        "links": {}[0m
+[32m                    },[0m
+[32m                    "log": true,[0m
+[32m                    "name": "ansible",[0m
+[32m                    "options": {[0m
+[32m                        "vvv": true[0m
+[32m                    },[0m
+[32m                    "playbooks": {[0m
+[32m                        "cleanup": "cleanup.yml",[0m
+[32m                        "converge": "converge.yml",[0m
+[32m                        "create": "create.yml",[0m
+[32m                        "destroy": "destroy.yml",[0m
+[32m                        "prepare": "../../../molecule_shared/prepare.yml",[0m
+[32m                        "side_effect": "side_effect.yml",[0m
+[32m                        "verify": "verify.yml"[0m
+[32m                    }[0m
+[32m                },[0m
+[32m                "scenario": {[0m
+[32m                    "check_sequence": [[0m
+[32m                        "dependency",[0m
+[32m                        "cleanup",[0m
+[32m                        "destroy",[0m
+[32m                        "create",[0m
+[32m                        "prepare",[0m
+[32m                        "converge",[0m
+[32m                        "check",[0m
+[32m                        "cleanup",[0m
+[32m                        "destroy"[0m
+[32m                    ],[0m
+[32m                    "cleanup_sequence": [[0m
+[32m                        "cleanup"[0m
+[32m                    ],[0m
+[32m                    "converge_sequence": [[0m
+[32m                        "dependency",[0m
+[32m                        "create",[0m
+[32m                        "prepare",[0m
+[32m                        "converge"[0m
+[32m                    ],[0m
+[32m                    "create_sequence": [[0m
+[32m                        "dependency",[0m
+[32m                        "create",[0m
+[32m                        "prepare"[0m
+[32m                    ],[0m
+[32m                    "destroy_sequence": [[0m
+[32m                        "dependency",[0m
+[32m                        "cleanup",[0m
+[32m                        "destroy"[0m
+[32m                    ],[0m
+[32m                    "name": "default",[0m
+[32m                    "test_sequence": [[0m
+[32m                        "dependency",[0m
+[32m                        "lint",[0m
+[32m                        "cleanup",[0m
+[32m                        "destroy",[0m
+[32m                        "syntax",[0m
+[32m                        "create",[0m
+[32m                        "prepare",[0m
+[32m                        "converge",[0m
+[32m                        "idempotence",[0m
+[32m                        "side_effect",[0m
+[32m                        "verify",[0m
+[32m                        "cleanup",[0m
+[32m                        "destroy"[0m
+[32m                    ][0m
+[32m                },[0m
+[32m                "verifier": {[0m
+[32m                    "additional_files_or_dirs": [],[0m
+[32m                    "enabled": true,[0m
+[32m                    "env": {},[0m
+[32m                    "lint": {[0m
+[32m                        "name": "flake8"[0m
+[32m                    },[0m
+[32m                    "name": "testinfra",[0m
+[32m                    "options": {}[0m
+[32m                }[0m
+[32m            },[0m
+[32m            "omit": "__omit_place_holder__f6a7345a01e38809d29d7d22a9a93ea42d2da481",[0m
+[32m            "playbook_dir": "/Users/apaudy028/public-github/ash-trafficcontrol-copy/infrastructure/ansible/roles/molecule_shared"[0m
+[32m        }[0m
+[32m    }[0m
+[32m}[0m
+
+TASK [Generate Server Private keys] ********************************************
+[1;30mtask path: /Users/apaudy028/public-github/ash-trafficcontrol-copy/infrastructure/ansible/roles/molecule_shared/prepare.yml:23[0m
+[34mredirecting (type: connection) ansible.builtin.docker to community.general.docker[0m
+[34m<fo.testlab.invalid> ESTABLISH DOCKER CONNECTION FOR USER: root[0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', "/bin/sh -c 'echo ~ && sleep 0'"][0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', '/bin/sh -c \'( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1615591381.686385-73524-273238340736804 `" && echo ansible-tmp-1615591381.686385-73524-273238340736804="` echo /root/.ansible/tmp/ansible-tmp-1615591381.686385-73524-273238340736804 `" ) && sleep 0\''][0m
+[34mredirecting (type: modules) ansible.builtin.openssl_privatekey to community.crypto.openssl_privatekey[0m
+[34mUsing module file /usr/local/lib/python3.8/site-packages/ansible_collections/community/crypto/plugins/modules/openssl_privatekey.py[0m
+[34m<fo.testlab.invalid> PUT /Users/apaudy028/.ansible/tmp/ansible-local-73461biyhlsab/tmpe7modtz0 TO /root/.ansible/tmp/ansible-tmp-1615591381.686385-73524-273238340736804/AnsiballZ_openssl_privatekey.py[0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', "/bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1615591381.686385-73524-273238340736804/ /root/.ansible/tmp/ansible-tmp-1615591381.686385-73524-273238340736804/AnsiballZ_openssl_privatekey.py && sleep 0'"][0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', "/bin/sh -c '/usr/bin/python /root/.ansible/tmp/ansible-tmp-1615591381.686385-73524-273238340736804/AnsiballZ_openssl_privatekey.py && sleep 0'"][0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', "/bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1615591381.686385-73524-273238340736804/ > /dev/null 2>&1 && sleep 0'"][0m
+[33mchanged: [fo.testlab.invalid] => {[0m
+[33m    "changed": true,[0m
+[33m    "filename": "/etc/pki/tls/private/server.key.pem",[0m
+[33m    "fingerprint": {[0m
+[33m        "md5": "46:f6:69:06:22:68:2c:41:80:6e:0c:1f:73:19:7a:10",[0m
+[33m        "sha1": "8e:6e:0f:64:b0:eb:f8:35:01:8f:c4:14:b4:ad:3c:22:80:b6:9f:c6",[0m
+[33m        "sha224": "bf:2e:38:d4:91:ab:ed:53:69:b5:ce:ea:10:11:7e:99:b8:76:53:30:96:3a:58:44:f2:80:77:c3",[0m
+[33m        "sha256": "17:c5:d2:de:0e:24:1a:61:bb:23:53:88:98:76:f8:ac:3f:ce:a4:dc:a3:62:1b:ad:46:73:05:d0:40:e7:d9:76",[0m
+[33m        "sha384": "1e:87:8a:2e:1b:41:8b:85:79:8d:6a:ef:66:f9:ee:5d:7e:50:74:16:6a:bf:ab:b6:59:24:cb:e5:68:31:d9:e8:0c:a3:1d:e9:4f:ac:02:c3:6a:b0:31:b4:1f:bd:85:e4",[0m
+[33m        "sha512": "ec:24:b9:51:6b:8e:df:2c:be:6b:e1:76:2b:0d:19:94:23:c1:94:c9:0c:a7:2f:45:e1:bd:b0:f8:69:f7:74:04:a4:b5:46:8f:da:2c:0c:03:c3:0c:68:49:7c:7c:0a:b7:d3:47:75:c7:8b:25:6f:78:e9:e8:2d:2e:25:33:75:c5"[0m
+[33m    },[0m
+[33m    "invocation": {[0m
+[33m        "module_args": {[0m
+[33m            "attributes": null,[0m
+[33m            "backup": false,[0m
+[33m            "cipher": null,[0m
+[33m            "curve": null,[0m
+[33m            "force": true,[0m
+[33m            "format": "auto_ignore",[0m
+[33m            "format_mismatch": "regenerate",[0m
+[33m            "group": null,[0m
+[33m            "mode": "0600",[0m
+[33m            "owner": null,[0m
+[33m            "passphrase": null,[0m
+[33m            "path": "/etc/pki/tls/private/server.key.pem",[0m
+[33m            "regenerate": "full_idempotence",[0m
+[33m            "return_content": false,[0m
+[33m            "select_crypto_backend": "auto",[0m
+[33m            "selevel": null,[0m
+[33m            "serole": null,[0m
+[33m            "setype": null,[0m
+[33m            "seuser": null,[0m
+[33m            "size": 4096,[0m
+[33m            "state": "present",[0m
+[33m            "type": "RSA",[0m
+[33m            "unsafe_writes": false[0m
+[33m        }[0m
+[33m    },[0m
+[33m    "size": 4096,[0m
+[33m    "type": "RSA"[0m
+[33m}[0m
+
+TASK [Generate a CSR] **********************************************************
+[1;30mtask path: /Users/apaudy028/public-github/ash-trafficcontrol-copy/infrastructure/ansible/roles/molecule_shared/prepare.yml:28[0m
+[34mredirecting (type: connection) ansible.builtin.docker to community.general.docker[0m
+[34m<fo.testlab.invalid> ESTABLISH DOCKER CONNECTION FOR USER: root[0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', "/bin/sh -c 'echo ~ && sleep 0'"][0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', '/bin/sh -c \'( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1615591384.256337-73560-143977464495883 `" && echo ansible-tmp-1615591384.256337-73560-143977464495883="` echo /root/.ansible/tmp/ansible-tmp-1615591384.256337-73560-143977464495883 `" ) && sleep 0\''][0m
+[34mredirecting (type: modules) ansible.builtin.openssl_csr to community.crypto.openssl_csr[0m
+[34mUsing module file /usr/local/lib/python3.8/site-packages/ansible_collections/community/crypto/plugins/modules/openssl_csr.py[0m
+[34m<fo.testlab.invalid> PUT /Users/apaudy028/.ansible/tmp/ansible-local-73461biyhlsab/tmp5a4dv39b TO /root/.ansible/tmp/ansible-tmp-1615591384.256337-73560-143977464495883/AnsiballZ_openssl_csr.py[0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', "/bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1615591384.256337-73560-143977464495883/ /root/.ansible/tmp/ansible-tmp-1615591384.256337-73560-143977464495883/AnsiballZ_openssl_csr.py && sleep 0'"][0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', "/bin/sh -c '/usr/bin/python /root/.ansible/tmp/ansible-tmp-1615591384.256337-73560-143977464495883/AnsiballZ_openssl_csr.py && sleep 0'"][0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', "/bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1615591384.256337-73560-143977464495883/ > /dev/null 2>&1 && sleep 0'"][0m
+[33mchanged: [fo.testlab.invalid] => {[0m
+[33m    "basicConstraints": null,[0m
+[33m    "changed": true,[0m
+[33m    "extendedKeyUsage": null,[0m
+[33m    "filename": "/etc/pki/tls/certs/server.csr",[0m
+[33m    "invocation": {[0m
+[33m        "module_args": {[0m
+[33m            "attributes": null,[0m
+[33m            "authority_cert_issuer": null,[0m
+[33m            "authority_cert_serial_number": null,[0m
+[33m            "authority_key_identifier": null,[0m
+[33m            "backup": false,[0m
+[33m            "basic_constraints": null,[0m
+[33m            "basic_constraints_critical": false,[0m
+[33m            "common_name": null,[0m
+[33m            "country_name": null,[0m
+[33m            "create_subject_key_identifier": false,[0m
+[33m            "digest": "sha256",[0m
+[33m            "email_address": null,[0m
+[33m            "extended_key_usage": null,[0m
+[33m            "extended_key_usage_critical": false,[0m
+[33m            "force": true,[0m
+[33m            "group": null,[0m
+[33m            "key_usage": null,[0m
+[33m            "key_usage_critical": false,[0m
+[33m            "locality_name": null,[0m
+[33m            "mode": null,[0m
+[33m            "name_constraints_critical": false,[0m
+[33m            "name_constraints_excluded": null,[0m
+[33m            "name_constraints_permitted": null,[0m
+[33m            "ocsp_must_staple": false,[0m
+[33m            "ocsp_must_staple_critical": false,[0m
+[33m            "organization_name": null,[0m
+[33m            "organizational_unit_name": null,[0m
+[33m            "owner": null,[0m
+[33m            "path": "/etc/pki/tls/certs/server.csr",[0m
+[33m            "privatekey_content": null,[0m
+[33m            "privatekey_passphrase": null,[0m
+[33m            "privatekey_path": "/etc/pki/tls/private/server.key.pem",[0m
+[33m            "return_content": false,[0m
+[33m            "select_crypto_backend": "auto",[0m
+[33m            "selevel": null,[0m
+[33m            "serole": null,[0m
+[33m            "setype": null,[0m
+[33m            "seuser": null,[0m
+[33m            "state": "present",[0m
+[33m            "state_or_province_name": null,[0m
+[33m            "subject": {[0m
+[33m                "C": "US",[0m
+[33m                "CN": "fo.testlab.invalid",[0m
+[33m                "L": "Denver",[0m
+[33m                "O": "Molecule Testing",[0m
+[33m                "OU": "CDN",[0m
+[33m                "ST": "Colorado",[0m
+[33m                "emailAddress": "ops@email.invalid"[0m
+[33m            },[0m
+[33m            "subject_alt_name": [[0m
+[33m                "DNS:fo.testlab.invalid"[0m
+[33m            ],[0m
+[33m            "subject_alt_name_critical": false,[0m
+[33m            "subject_key_identifier": null,[0m
+[33m            "unsafe_writes": false,[0m
+[33m            "use_common_name_for_san": true,[0m
+[33m            "version": 1[0m
+[33m        }[0m
+[33m    },[0m
+[33m    "keyUsage": null,[0m
+[33m    "name_constraints_excluded": [],[0m
+[33m    "name_constraints_permitted": [],[0m
+[33m    "ocspMustStaple": false,[0m
+[33m    "privatekey": "/etc/pki/tls/private/server.key.pem",[0m
+[33m    "subject": [[0m
+[33m        [[0m
+[33m            "C",[0m
+[33m            "US"[0m
+[33m        ],[0m
+[33m        [[0m
+[33m            "CN",[0m
+[33m            "fo.testlab.invalid"[0m
+[33m        ],[0m
+[33m        [[0m
+[33m            "L",[0m
+[33m            "Denver"[0m
+[33m        ],[0m
+[33m        [[0m
+[33m            "O",[0m
+[33m            "Molecule Testing"[0m
+[33m        ],[0m
+[33m        [[0m
+[33m            "ST",[0m
+[33m            "Colorado"[0m
+[33m        ],[0m
+[33m        [[0m
+[33m            "emailAddress",[0m
+[33m            "ops@email.invalid"[0m
+[33m        ],[0m
+[33m        [[0m
+[33m            "OU",[0m
+[33m            "CDN"[0m
+[33m        ][0m
+[33m    ],[0m
+[33m    "subjectAltName": [[0m
+[33m        "DNS:fo.testlab.invalid"[0m
+[33m    ][0m
+[33m}[0m
+
+TASK [Copy the main ssl files into each proper destination] ********************
+[1;30mtask path: /Users/apaudy028/public-github/ash-trafficcontrol-copy/infrastructure/ansible/roles/molecule_shared/prepare.yml:52[0m
+[34mredirecting (type: connection) ansible.builtin.docker to community.general.docker[0m
+[34m<fo.testlab.invalid> ESTABLISH DOCKER CONNECTION FOR USER: root[0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', "/bin/sh -c 'echo ~ && sleep 0'"][0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', '/bin/sh -c \'( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1615591386.6217852-73595-144841910616348 `" && echo ansible-tmp-1615591386.6217852-73595-144841910616348="` echo /root/.ansible/tmp/ansible-tmp-1615591386.6217852-73595-144841910616348 `" ) && sleep 0\''][0m
+[34mUsing module file /usr/local/lib/python3.8/site-packages/ansible/modules/copy.py[0m
+[34m<fo.testlab.invalid> PUT /Users/apaudy028/.ansible/tmp/ansible-local-73461biyhlsab/tmpyin6b84a TO /root/.ansible/tmp/ansible-tmp-1615591386.6217852-73595-144841910616348/AnsiballZ_copy.py[0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', "/bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1615591386.6217852-73595-144841910616348/ /root/.ansible/tmp/ansible-tmp-1615591386.6217852-73595-144841910616348/AnsiballZ_copy.py && sleep 0'"][0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', "/bin/sh -c '/usr/bin/python /root/.ansible/tmp/ansible-tmp-1615591386.6217852-73595-144841910616348/AnsiballZ_copy.py && sleep 0'"][0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', "/bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1615591386.6217852-73595-144841910616348/ > /dev/null 2>&1 && sleep 0'"][0m
+[31mfailed: [fo.testlab.invalid] (item={'src': '/molecule/files/ssl/lab.rootca.crt', 'dest': '/etc/pki/ca-trust/source/anchors/lab.rootca.crt'}) => {[0m
+[31m    "ansible_loop_var": "item",[0m
+[31m    "changed": false,[0m
+[31m    "invocation": {[0m
+[31m        "module_args": {[0m
+[31m            "_original_basename": null,[0m
+[31m            "attributes": null,[0m
+[31m            "backup": false,[0m
+[31m            "checksum": null,[0m
+[31m            "content": null,[0m
+[31m            "dest": "/etc/pki/ca-trust/source/anchors/lab.rootca.crt",[0m
+[31m            "directory_mode": null,[0m
+[31m            "follow": false,[0m
+[31m            "force": true,[0m
+[31m            "group": null,[0m
+[31m            "local_follow": null,[0m
+[31m            "mode": null,[0m
+[31m            "owner": null,[0m
+[31m            "remote_src": true,[0m
+[31m            "selevel": null,[0m
+[31m            "serole": null,[0m
+[31m            "setype": null,[0m
+[31m            "seuser": null,[0m
+[31m            "src": "/molecule/files/ssl/lab.rootca.crt",[0m
+[31m            "unsafe_writes": false,[0m
+[31m            "validate": null[0m
+[31m        }[0m
+[31m    },[0m
+[31m    "item": {[0m
+[31m        "dest": "/etc/pki/ca-trust/source/anchors/lab.rootca.crt",[0m
+[31m        "src": "/molecule/files/ssl/lab.rootca.crt"[0m
+[31m    },[0m
+[31m    "msg": "Source /molecule/files/ssl/lab.rootca.crt not found"[0m
+[31m}[0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', "/bin/sh -c 'echo ~ && sleep 0'"][0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', '/bin/sh -c \'( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1615591388.270258-73595-63579835956388 `" && echo ansible-tmp-1615591388.270258-73595-63579835956388="` echo /root/.ansible/tmp/ansible-tmp-1615591388.270258-73595-63579835956388 `" ) && sleep 0\''][0m
+[34mUsing module file /usr/local/lib/python3.8/site-packages/ansible/modules/copy.py[0m
+[34m<fo.testlab.invalid> PUT /Users/apaudy028/.ansible/tmp/ansible-local-73461biyhlsab/tmpg1n6bq44 TO /root/.ansible/tmp/ansible-tmp-1615591388.270258-73595-63579835956388/AnsiballZ_copy.py[0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', "/bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1615591388.270258-73595-63579835956388/ /root/.ansible/tmp/ansible-tmp-1615591388.270258-73595-63579835956388/AnsiballZ_copy.py && sleep 0'"][0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', "/bin/sh -c '/usr/bin/python /root/.ansible/tmp/ansible-tmp-1615591388.270258-73595-63579835956388/AnsiballZ_copy.py && sleep 0'"][0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', "/bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1615591388.270258-73595-63579835956388/ > /dev/null 2>&1 && sleep 0'"][0m
+[31mfailed: [fo.testlab.invalid] (item={'src': '/molecule/files/ssl/lab.intermediateca.crt', 'dest': '/etc/pki/ca-trust/source/anchors/lab.intermediateca.crt'}) => {[0m
+[31m    "ansible_loop_var": "item",[0m
+[31m    "changed": false,[0m
+[31m    "invocation": {[0m
+[31m        "module_args": {[0m
+[31m            "_original_basename": null,[0m
+[31m            "attributes": null,[0m
+[31m            "backup": false,[0m
+[31m            "checksum": null,[0m
+[31m            "content": null,[0m
+[31m            "dest": "/etc/pki/ca-trust/source/anchors/lab.intermediateca.crt",[0m
+[31m            "directory_mode": null,[0m
+[31m            "follow": false,[0m
+[31m            "force": true,[0m
+[31m            "group": null,[0m
+[31m            "local_follow": null,[0m
+[31m            "mode": null,[0m
+[31m            "owner": null,[0m
+[31m            "remote_src": true,[0m
+[31m            "selevel": null,[0m
+[31m            "serole": null,[0m
+[31m            "setype": null,[0m
+[31m            "seuser": null,[0m
+[31m            "src": "/molecule/files/ssl/lab.intermediateca.crt",[0m
+[31m            "unsafe_writes": false,[0m
+[31m            "validate": null[0m
+[31m        }[0m
+[31m    },[0m
+[31m    "item": {[0m
+[31m        "dest": "/etc/pki/ca-trust/source/anchors/lab.intermediateca.crt",[0m
+[31m        "src": "/molecule/files/ssl/lab.intermediateca.crt"[0m
+[31m    },[0m
+[31m    "msg": "Source /molecule/files/ssl/lab.intermediateca.crt not found"[0m
+[31m}[0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', "/bin/sh -c 'echo ~ && sleep 0'"][0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', '/bin/sh -c \'( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1615591389.749664-73595-15595180943661 `" && echo ansible-tmp-1615591389.749664-73595-15595180943661="` echo /root/.ansible/tmp/ansible-tmp-1615591389.749664-73595-15595180943661 `" ) && sleep 0\''][0m
+[34mUsing module file /usr/local/lib/python3.8/site-packages/ansible/modules/copy.py[0m
+[34m<fo.testlab.invalid> PUT /Users/apaudy028/.ansible/tmp/ansible-local-73461biyhlsab/tmphmjh0ijf TO /root/.ansible/tmp/ansible-tmp-1615591389.749664-73595-15595180943661/AnsiballZ_copy.py[0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', "/bin/sh -c 'chmod u+x /root/.ansible/tmp/ansible-tmp-1615591389.749664-73595-15595180943661/ /root/.ansible/tmp/ansible-tmp-1615591389.749664-73595-15595180943661/AnsiballZ_copy.py && sleep 0'"][0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', "/bin/sh -c '/usr/bin/python /root/.ansible/tmp/ansible-tmp-1615591389.749664-73595-15595180943661/AnsiballZ_copy.py && sleep 0'"][0m
+[34m<fo.testlab.invalid> EXEC ['/usr/local/bin/docker', b'exec', b'-i', 'fo.testlab.invalid', '/bin/sh', '-c', "/bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1615591389.749664-73595-15595180943661/ > /dev/null 2>&1 && sleep 0'"][0m
+[31mfailed: [fo.testlab.invalid] (item={'src': '/molecule/files/ssl/lab.intermediateca.key.pem', 'dest': '/etc/pki/tls/private/lab.intermediateca.key.pem'}) => {[0m
+[31m    "ansible_loop_var": "item",[0m
+[31m    "changed": false,[0m
+[31m    "invocation": {[0m
+[31m        "module_args": {[0m
+[31m            "_original_basename": null,[0m
+[31m            "attributes": null,[0m
+[31m            "backup": false,[0m
+[31m            "checksum": null,[0m
+[31m            "content": null,[0m
+[31m            "dest": "/etc/pki/tls/private/lab.intermediateca.key.pem",[0m
+[31m            "directory_mode": null,[0m
+[31m            "follow": false,[0m
+[31m            "force": true,[0m
+[31m            "group": null,[0m
+[31m            "local_follow": null,[0m
+[31m            "mode": null,[0m
+[31m            "owner": null,[0m
+[31m            "remote_src": true,[0m
+[31m            "selevel": null,[0m
+[31m            "serole": null,[0m
+[31m            "setype": null,[0m
+[31m            "seuser": null,[0m
+[31m            "src": "/molecule/files/ssl/lab.intermediateca.key.pem",[0m
+[31m            "unsafe_writes": false,[0m
+[31m            "validate": null[0m
+[31m        }[0m
+[31m    },[0m
+[31m    "item": {[0m
+[31m        "dest": "/etc/pki/tls/private/lab.intermediateca.key.pem",[0m
+[31m        "src": "/molecule/files/ssl/lab.intermediateca.key.pem"[0m
+[31m    },[0m
+[31m    "msg": "Source /molecule/files/ssl/lab.intermediateca.key.pem not found"[0m
+[31m}[0m
+
+PLAY RECAP *********************************************************************
+[31mfo.testlab.invalid[0m         : [32mok=4   [0m [33mchanged=2   [0m unreachable=0    [31mfailed=1   [0m skipped=0    rescued=0    ignored=0
+
+[1;31mCRITICAL[0m Ansible return code was [1;34m2[0m, command was: ansible-playbook --diff --inventory [35m/Users/apaudy028/.cache/molecule/fakeOrigin/default/[0m[95minventory[0m --skip-tags molecule-notest,notest [35m/Users/apaudy028/public-github/ash-trafficcontrol-copy/infrastructure/ansible/roles/molecule_shared/[0m[95mprepare.yml[0m
